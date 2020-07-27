@@ -1,5 +1,10 @@
 .large-hero {
   position: relative;
+  border-bottom: 10px solid $color-blue;
+
+  &__image {
+    display: block;
+  }
 
   &__text-content {
     position: absolute;
@@ -15,17 +20,9 @@
     color: $color-blue;
     margin: 0;
 
-    font-size: 1.1rem;
+    font-size: 2.4rem;
 
     @mixin screen-small {
-      font-size: 2rem;
-    }
-
-    @mixin screen-medium {
-      font-size: 3.2rem;
-    }
-
-    @mixin screen-large {
       font-size: 4.8rem;
     }
   }
@@ -33,7 +30,7 @@
   &__subtitle {
     font-weight: 300;
     color: $color-blue;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 0;
 
     @mixin screen-small {
@@ -43,10 +40,15 @@
 
   &__description {
     color: #FFF;
-    font-size: 1.875rem;
     font-weight: 100;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
     max-width: 30rem;
     margin: 0 auto;
+    font-size: 1.1rem;
+
+    @mixin screen-small {
+      
+      font-size: 1.875rem;
+    }
   }
 }
